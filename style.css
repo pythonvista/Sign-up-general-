@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgba(31, 18, 44, 0.988) 60%,
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./images/3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* HEADER */
+header {
+  height: 25vh;
+  /* border: 2px solid blue; */
+}
+
+.head {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.logo {
+  display: inline-block;
+  background-color: rgb(34, 106, 214);
+  border: 2px solid rgb(34, 106, 214);
+  border-radius: 20px;
+  color: rgb(34, 106, 214);
+  margin: 10px 0 0 30px;
+  /* border: 2px solid green; */
+}
+
+.logo-name {
+  /* border: 2px solid yellow; */
+  padding-top: 11px;
+  margin-right: 5rem;
+  font-size: 15px;
+  color: white;
+}
+
+.app-dot {
+  color: rgb(34, 106, 214);
+}
+
+.nav {
+  /* border: 2px solid yellow; */
+  display: flex;
+  gap: 70px;
+  padding-top: 13px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(148, 142, 142);
+}
+
+/* HEADER HOVER */
+.app-dot:hover {
+  color: yellow;
+  transition: all 0.9s ease-in-out;
+  cursor: default;
+}
+
+.logo:hover {
+  border: 2px solid white;
+  transition: all 0.9s ease-in-out;
+  cursor: default;
+}
+.logo-name:hover {
+  color: wheat;
+  transition: all 0.9s ease-in-out;
+  cursor: default;
+}
+.nav a:hover {
+  text-decoration: underline white;
+}
+
+/* END OF HEADER HOVER */
+/* END OF HEADER */
+
+/* SECTION 1 */
+.sec-1 {
+  /* border: 2px solid green; */
+  height: 25vh;
+  /* border: 2px solid yellow; */
+  padding-left: 6rem;
+}
+
+.start {
+  color: rgb(175, 174, 174);
+  font-size: 10px;
+}
+
+.create {
+  color: white;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+.create-dot {
+  font-size: 4rem;
+  color: blue;
+}
+
+.log-in {
+  color: rgb(148, 142, 142);
+  margin-top: 15px;
+}
+
+.log-in a {
+  text-decoration: none;
+  color: rgb(0, 81, 255);
+}
+
+.log-in a:hover {
+  text-decoration: underline white;
+}
+
+/* END OF SECTION 1 */
+
+/* SECTION 2 */
+.sec-2 {
+  /* border: 2px solid yellow; */
+  height: 30vh;
+  padding-left: 6rem;
+}
+
+.form-name {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-name input {
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(61, 36, 83, 0.988);
+  color: white;
+}
+
+.form-mail input {
+  margin-top: 15px;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  width: 24rem;
+  border: none;
+  background-color: rgba(61, 36, 83, 0.988);
+  color: white;
+}
+
+.form-password input {
+  margin-top: 15px;
+  padding: 10px 0 10px 10px;
+  border-radius: 5px;
+  width: 24rem;
+  border: none;
+  background-color: rgba(61, 36, 83, 0.988);
+  color: white;
+}
+
+/* SECTION 1 HOVER */
+.form-name input:hover {
+  border-bottom: 2px solid rgb(100, 93, 83);
+}
+
+.form-mail input:hover {
+  border-bottom: 2px solid rgb(100, 93, 83);
+}
+
+.form-password input:hover {
+  border-bottom: 2px solid rgb(100, 93, 83);
+}
+/* SECTION 1 HOVER */
+
+/* END OF SECTION 3 */
+
+/* SECTION 2 */
+.sec-3 {
+  /* border: 2px solid violet; */
+  height: 20vh;
+  padding-left: 5.5rem;
+}
+
+.method {
+  display: flex;
+  gap: 1rem;
+}
+
+.method button {
+  padding: 15px 0 15px 0;
+  border-radius: 20px;
+  border: none;
+  width: 11.5rem;
+  text-align: center;
+}
+
+.method a {
+  color: white;
+  text-decoration: none;
+}
+
+.create-method {
+  background-color: rgba(61, 36, 83, 0.988);
+}
+.create-account {
+  background-color: rgb(0, 81, 255);
+}
+
+.create-method:hover {
+  border-bottom: 2px solid rgb(100, 93, 83);
+  cursor: pointer;
+}
+.create-account:hover {
+  border-bottom: 2px solid wheat;
+  cursor: pointer;
+}
+
+/* END OF SECTION 3 */
+
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+  body {
+    height: 100vh;
+    margin: auto;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  .head {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .logo-name {
+    padding-top: 16px;
+    margin-right: 2rem;
+    font-size: 10px;
+    color: white;
+  }
+
+  .nav {
+    display: flex;
+    gap: 40px;
+    padding-top: 13px;
+    padding-left: 30px;
+  }
+
+  .sec-1 {
+    height: 20vh;
+    padding-left: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .start {
+    color: rgb(175, 174, 174);
+    font-size: 10px;
+  }
+
+  .create {
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -25px;
+  }
+
+  .log-in {
+    color: rgb(148, 142, 142);
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .log-in a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+    padding-left: 5px;
+  }
+  .sec-2 {
+    height: 30vh;
+    padding-left: auto;
+  }
+
+  .sec-2 input {
+    width: 14rem;
+    padding: auto;
+  }
+
+  .form-name {
+    display: block;
+    justify-content: flex-end;
+  }
+
+  .form-name input {
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+    /* width: 20rem; */
+    text-align: center;
+  }
+
+  .form-mail input {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    /* width: 20rem; */
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+  }
+
+  .form-password input {
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    /* width: 20rem; */
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+    text-align: center;
+  }
+
+  .sec-3 {
+    height: 15vh;
+    padding-left: auto;
+  }
+
+  .method {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding-left: 1.5rem;
+  }
+
+  .method button {
+    padding: 15px 0 15px 0;
+    border-radius: 20px;
+    border: none;
+    width: 12rem;
+    margin-top: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 280px) {
+  body {
+    height: 100vh;
+    margin: auto;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  .head {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .logo-name {
+    padding-top: 18px;
+    margin-right: 1rem;
+    font-size: 7px;
+    color: white;
+  }
+
+  .nav {
+    display: flex;
+    gap: 30px;
+    padding-top: 13px;
+    padding-left: 20px;
+  }
+
+  .sec-1 {
+    height: 20vh;
+    padding-left: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .start {
+    color: rgb(175, 174, 174);
+    font-size: 8px;
+  }
+
+  .create {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -25px;
+  }
+
+  .log-in {
+    color: rgb(148, 142, 142);
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .log-in a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+    padding-left: 5px;
+  }
+  .sec-2 {
+    height: 30vh;
+    padding-left: 3.3rem;
+  }
+
+  .sec-2 input {
+    width: 12rem;
+    padding: auto;
+  }
+
+  .form-name {
+    display: block;
+    justify-content: flex-end;
+  }
+
+  .form-name input {
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+    /* width: 20rem; */
+    text-align: center;
+  }
+
+  .form-mail input {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    /* width: 20rem; */
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+  }
+
+  .form-password input {
+    margin-top: 15px;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    /* width: 20rem; */
+    border: none;
+    background-color: rgba(61, 36, 83, 0.988);
+    color: white;
+    text-align: center;
+  }
+
+  .sec-3 {
+    height: 15vh;
+    padding-left: 3rem;
+  }
+
+  .method {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding-left: 1.5rem;
+  }
+
+  .method button {
+    padding: 15px 0 15px 0;
+    border-radius: 20px;
+    border: none;
+    width: 10rem;
+    margin-top: 14px;
+    text-align: center;
+  }
+}
